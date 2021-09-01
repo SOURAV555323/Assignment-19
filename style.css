@@ -185,6 +185,25 @@ header .header_menu ul li ul li a::after{
 	font-size: 35px;
 	text-transform: uppercase;
 	font-weight: 700;
+    position: relative;
+}
+.banner h3::before{
+    content: "";
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 53%;
+    left: 285px;
+    background-color: white;
+}
+.banner h3::after{
+    content: "";
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 53%;
+    right: 285px;
+    background-color: white;
 }
 .banner a {
 	text-decoration: none;
@@ -240,6 +259,7 @@ header .header_menu ul li ul li a::after{
 	font-size: 15px;
 	margin-top: 15px;
 	color: #5f5f5f;
+    margin-bottom: 20px;
 }
 .service .service_item a {
 	text-decoration: none;
@@ -277,14 +297,108 @@ header .header_menu ul li ul li a::after{
 .about .video{
     width: 40%;
 }
-.about .about{
+.about .about_text{
     width: 55%;
 }
-.about .about h1{}
-.about .about h1 span{}
-.about .about p{}
-.about .about span{}
-.about .about details{}
-.about .about details summary{}
-.about .about details p{}
-.about .about a{}
+.about .about_text h1 {
+	font-size: 45px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: black;
+	margin-top: 0px;
+}
+.about .about_text h1 span{
+    color: #be882b;
+}
+.about .about_text details{
+    margin-top: 15px;
+}
+.about .about_text a{
+    color: white;
+    display: inline-block;
+    background-color: black;
+    padding: 7px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: all ease .4s;
+}
+.about .about_text a:hover{
+    background-color: #be882b;
+    color: white;
+}
+/*===>>> about section end <<<===*/
+
+/*===>>> contact section start <<<===*/
+.contact {
+	background-image: url(../Assignment-19/contact.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right center;
+	padding: 110px 0 207px 0;
+}
+.contact .contact_form {
+	width: 60%;
+}
+.contact .contact_form h2 {
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.contact .contact_form p{
+    margin-bottom: 15px;
+}
+.form_item {
+	width: 80%;
+	padding: 5px 13px;
+	font-size: 17px;
+	font-weight: 600;
+	margin-bottom: 15px;
+    box-shadow: 0 0 20px #eeece8;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.m-l{
+    margin-left: 5px;
+    outline: none;
+}
+input:focus-visible{
+    outline: none;
+}
+.form_item:focus{
+    border: 1px solid black;
+}
+input[type=submit]{
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: #be882b;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+/*===>>> contact section start <<<===*/
+
+/*===>>> footer section start <<<===*/
+.footer{
+    background-color: #6d6d6d;
+    height: 60px;
+}
+.footer .footer_text{
+    width: 60%;
+}
+.footer .footer_text span{
+    line-height: 60px;
+    color: white;
+}
+.footer .footer_icon{
+    width: 40%;
+}
+.footer .footer_icon a{
+    display: inline-block;
+    padding: 0 15px;
+    color: white;
+    line-height: 60px;
+}
+/*===>>> footer section end <<<===*/
